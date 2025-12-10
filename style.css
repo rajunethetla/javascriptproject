@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 12px;
+    color: gray;
+    letter-spacing: 2px;
+}
+
+.menu a, .right-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.cart-icon {
+    font-weight: bold;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #c7e6e1;
+    padding: 80px;
+}
+
+.hero-text h1 {
+    font-size: 65px;
+}
+
+.shop-btn {
+    padding: 10px 25px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.shop-section {
+    padding: 40px;
+}
+
+.shop-title {
+    font-size: 60px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.product-card {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.colors {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.black { background: black; }
+.brown { background: #8b5a2b; }
+.cream { background: #e5cdb2; }
+
+.no-more {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background: #eee;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer {
+    background: #ececec;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+}
+
+.subscribe-btn {
+    margin-top: 10px;
+    padding: 8px 20px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+}
+/* shopall pianadi */
+
+
+
+
+
+

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Shop</title>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 12px;
+    color: gray;
+    letter-spacing: 2px;
+}
+
+.menu a, .right-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.cart-icon {
+    font-weight: bold;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #c7e6e1;
+    padding: 80px;
+}
+
+.hero-text h1 {
+    font-size: 65px;
+}
+
+.shop-btn {
+    padding: 10px 25px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.shop-section {
+    padding: 40px;
+}
+
+.shop-title {
+    font-size: 60px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.product-card {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.colors {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.black { background: black; }
+.brown { background: #8b5a2b; }
+.cream { background: #e5cdb2; }
+
+.no-more {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background: #eee;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer {
+    background: #ececec;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+}
+
+.subscribe-btn {
+    margin-top: 10px;
+    padding: 8px 20px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+}
+/* shopall pianadi */
+</style>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">FURNITURE<br><span>SHOP</span></div>
+
+    <nav class="menu">
+        <a href="#" onclick="showHome()">HOME</a>
+        <a href="#" onclick="showShop()">SHOP ALL</a>
+        <a href="#">DECOR</a>
+        <a href="#">OFFICE</a>
+        <a href="#">LIVING ROOM</a>
+        <a href="#">BEDROOM</a>
+    </nav>
+
+    <div class="right-links">
+        <a href="#">Story</a>
+        <a href="#">Contact</a>
+        <a href="#">Track Order</a>
+        <a href="#">Help</a>
+        <a class="cart-icon">🛒 0</a>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-text">
+        <p>BLACK FRIDAY IN JULY</p>
+        <h1>UP TO 50% OFF</h1>
+        <h3>HUNDREDS OF STYLES AVAILABLE</h3>
+        <button class="shop-btn" onclick="showShop()">SHOP NOW</button>
+    </div>
+
+    <img src="chair.png" class="hero-chair">
+</section>
+
+<section id="shop" class="shop-section hidden">
+    
+    <h1 class="shop-title">SHOP</h1>
+    <p class="shop-sub">Showing 1–9 of 16 results</p>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <span class="sale">Sale!</span>
+            <img src="item1.jpg">
+            <h3>Product Name 1</h3>
+            <p class="price">$85.00 – $99.00</p>
+
+            <div class="colors">
+                <span class="dot black"></span>
+                <span class="dot brown"></span>
+                <span class="dot cream"></span>
+            </div>
+        </div>
+
+       
+        <div class="product-card">
+            <span class="sale">Sale!</span>
+            <img src="item2.jpg">
+            <h3>Product Name 2</h3>
+            <p class="price">$85.00 – $99.00</p>
+
+            <div class="colors">
+                <span class="dot black"></span>
+                <span class="dot brown"></span>
+                <span class="dot cream"></span>
+            </div>
+        </div>
+
+       
+        <div class="product-card">
+            <span class="sale">Sale!</span>
+            <img src="item3.jpg">
+            <h3>Product Name 3</h3>
+            <p class="price">$85.00 – $99.00</p>
+
+            <div class="colors">
+                <span class="dot black"></span>
+                <span class="dot brown"></span>
+                <span class="dot cream"></span>
+            </div>
+        </div>
+    </div>
+
+    <p class="no-more">No more products to show.</p>
+</section>
+
+
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h2>FURNITURE</h2>
+            <p>SHOP</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>LINKS</h3>
+            <p>Story</p>
+            <p>Contact</p>
+            <p>Track Order</p>
+            <p>Help</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>CATEGORIES</h3>
+            <p>Bedroom (6)</p>
+            <p>Decor (9)</p>
+            <p>Living Room (6)</p>
+            <p>Office (11)</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>SUBSCRIBE</h3>
+            <input type="email" placeholder="Your email...">
+            <button class="subscribe-btn">SUBSCRIBE</button>
+        </div>
+
+    </div>
+
+    <p class="copyright">Copyright © 2025 Furniture Shop | Powered by Furniture Shop</p>
+</footer>
+
+
+<script>
+    function showShop() {
+    document.getElementById("home").classList.add("hidden");
+    document.getElementById("shop").classList.remove("hidden");
+}
+
+function showHome() {
+    document.getElementById("shop").classList.add("hidden");
+    document.getElementById("home").classList.remove("hidden");
+}
+
+</script>
+</body>
+</html>
