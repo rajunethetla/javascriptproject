@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture Shop</title>
+
 <style>
-    body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
 
 .navbar {
     display: flex;
@@ -41,7 +41,6 @@
     font-weight: bold;
 }
 
-
 .hero {
     display: flex;
     justify-content: space-between;
@@ -61,7 +60,6 @@
     border: none;
     cursor: pointer;
 }
-
 
 .hidden {
     display: none;
@@ -134,7 +132,6 @@
     margin-right: auto;
 }
 
-
 footer {
     background: #ececec;
     padding: 40px;
@@ -157,26 +154,28 @@ footer {
     color: white;
     border: none;
 }
-
-.copyright {
-    text-align: center;
-    margin-top: 30px;
+.search-icon {
+    font-size: 18px;
+    cursor: pointer;
 }
-/* shopall pianadi */
 </style>
 </head>
+
 <body>
+
 <header class="navbar">
     <div class="logo">FURNITURE<br><span>SHOP</span></div>
 
     <nav class="menu">
-        <a href="#" onclick="showHome()">HOME</a>
-        <a href="#" onclick="showShop()">SHOP ALL</a>
-        <a href="#">DECOR</a>
-        <a href="#">OFFICE</a>
-        <a href="#">LIVING ROOM</a>
-        <a href="#">BEDROOM</a>
-    </nav>
+    <a href="#" onclick="showHome()">HOME</a>
+    <a href="#" onclick="showShop()">SHOP ALL</a>
+    <a href="#" onclick="showDecor()">DECOR</a>
+    <a href="#" onclick="showOffice()">OFFICE</a>
+    <a href="#" onclick="showLiving()">LIVING ROOM</a>
+    <a href="#" onclick="showBedroom()">BEDROOM</a>
+    <a href="#" class="search-icon">🔍</a>
+</nav>
+
 
     <div class="right-links">
         <a href="#">Story</a>
@@ -187,6 +186,7 @@ footer {
     </div>
 </header>
 
+<!-- HOME SECTION -->
 <section id="home" class="hero">
     <div class="hero-text">
         <p>BLACK FRIDAY IN JULY</p>
@@ -198,9 +198,9 @@ footer {
     <img src="chair.png" class="hero-chair">
 </section>
 
+<!-- SHOP ALL SECTION -->
 <section id="shop" class="shop-section hidden">
-    
-    <h1 class="shop-title">SHOP</h1>
+    <h1 class="shop-title">SHOP ALL</h1>
     <p class="shop-sub">Showing 1–9 of 16 results</p>
 
     <div class="product-grid">
@@ -210,7 +210,6 @@ footer {
             <img src="item1.jpg">
             <h3>Product Name 1</h3>
             <p class="price">$85.00 – $99.00</p>
-
             <div class="colors">
                 <span class="dot black"></span>
                 <span class="dot brown"></span>
@@ -218,13 +217,11 @@ footer {
             </div>
         </div>
 
-       
         <div class="product-card">
             <span class="sale">Sale!</span>
             <img src="item2.jpg">
             <h3>Product Name 2</h3>
             <p class="price">$85.00 – $99.00</p>
-
             <div class="colors">
                 <span class="dot black"></span>
                 <span class="dot brown"></span>
@@ -232,29 +229,159 @@ footer {
             </div>
         </div>
 
-       
         <div class="product-card">
             <span class="sale">Sale!</span>
             <img src="item3.jpg">
             <h3>Product Name 3</h3>
             <p class="price">$85.00 – $99.00</p>
-
             <div class="colors">
                 <span class="dot black"></span>
                 <span class="dot brown"></span>
                 <span class="dot cream"></span>
             </div>
         </div>
+
     </div>
 
     <p class="no-more">No more products to show.</p>
 </section>
 
+<!-- DECOR SECTION -->
+<section id="decor" class="shop-section hidden">
+    <h1 class="shop-title">DECOR</h1>
+    <p class="shop-sub">Showing 1–6 of 6 results</p>
 
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="decor1.jpg">
+            <h3>Decor Item 1</h3>
+            <p class="price">$45.00</p>
+        </div>
+
+        <div class="product-card">
+            <img src="decor2.jpg">
+            <h3>Decor Item 2</h3>
+            <p class="price">$55.00</p>
+        </div>
+
+        <div class="product-card">
+            <img src="decor3.jpg">
+            <h3>Decor Item 3</h3>
+            <p class="price">$65.00</p>
+        </div>
+
+    </div>
+
+    <p class="no-more">End of decor products.</p>
+</section>
+
+<!-- OFFICE SECTION -->
+<section id="office" class="shop-section hidden">
+    <h1 class="shop-title">OFFICE</h1>
+    <p class="shop-sub">Showing 1–6 of 11 results</p>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <span class="sale">Sale!</span>
+            <img src="office1.jpg">
+            <h3>Office Item 1</h3>
+            <p class="price">$85.00 – $99.00</p>
+            <div class="colors">
+                <span class="dot black"></span>
+                <span class="dot brown"></span>
+                <span class="dot cream"></span>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <span class="sale">Sale!</span>
+            <img src="office2.jpg">
+            <h3>Office Item 2</h3>
+            <p class="price">$85.00 – $99.00</p>
+            <div class="colors">
+                <span class="dot black"></span>
+                <span class="dot brown"></span>
+                <span class="dot cream"></span>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <span class="sale">Sale!</span>
+            <img src="office3.jpg">
+            <h3>Office Item 3</h3>
+            <p class="price">$85.00 – $99.00</p>
+            <div class="colors">
+                <span class="dot black"></span>
+                <span class="dot brown"></span>
+                <span class="dot cream"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="no-more">No more products to show.</p>
+</section>
+
+<!-- LIVING ROOM SECTION -->
+<section id="living" class="shop-section hidden">
+    <h1 class="shop-title">LIVING ROOM</h1>
+    <p class="shop-sub">Showing 1–6 of 6 results</p>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="living1.jpg">
+            <h3>Living Room Sofa</h3>
+            <p class="price">$299.00</p>
+        </div>
+
+        <div class="product-card">
+            <img src="living2.jpg">
+            <h3>Living Room Chair</h3>
+            <p class="price">$159.00</p>
+        </div>
+
+        <div class="product-card">
+            <img src="living3.jpg">
+            <h3>Living Decor</h3>
+            <p class="price">$75.00</p>
+        </div>
+    </div>
+
+    <p class="no-more">End of living room products.</p>
+</section>
+
+<!-- BEDROOM SECTION -->
+<section id="bedroom" class="shop-section hidden">
+    <h1 class="shop-title">BEDROOM</h1>
+    <p class="shop-sub">Showing 1–6 of 6 results</p>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="bed1.jpg">
+            <h3>Bed Frame</h3>
+            <p class="price">$450.00</p>
+        </div>
+
+        <div class="product-card">
+            <img src="bed2.jpg">
+            <h3>Bedroom Table</h3>
+            <p class="price">$120.00</p>
+        </div>
+
+        <div class="product-card">
+            <img src="bed3.jpg">
+            <h3>Wardrobe</h3>
+            <p class="price">$599.00</p>
+        </div>
+    </div>
+
+    <p class="no-more">End of bedroom products.</p>
+</section>
 
 <footer>
     <div class="footer-container">
-
         <div class="footer-col">
             <h2>FURNITURE</h2>
             <p>SHOP</p>
@@ -281,24 +408,50 @@ footer {
             <input type="email" placeholder="Your email...">
             <button class="subscribe-btn">SUBSCRIBE</button>
         </div>
-
     </div>
-
-    <p class="copyright">Copyright © 2025 Furniture Shop | Powered by Furniture Shop</p>
 </footer>
 
-
+<!-- JAVASCRIPT -->
 <script>
-    function showShop() {
+function hideAll() {
     document.getElementById("home").classList.add("hidden");
+    document.getElementById("shop").classList.add("hidden");
+    document.getElementById("decor").classList.add("hidden");
+    document.getElementById("office").classList.add("hidden");
+    document.getElementById("living").classList.add("hidden");
+    document.getElementById("bedroom").classList.add("hidden");
+}
+
+function showShop() {
+    hideAll();
     document.getElementById("shop").classList.remove("hidden");
 }
 
 function showHome() {
-    document.getElementById("shop").classList.add("hidden");
+    hideAll();
     document.getElementById("home").classList.remove("hidden");
 }
 
+function showDecor() {
+    hideAll();
+    document.getElementById("decor").classList.remove("hidden");
+}
+
+function showOffice() {
+    hideAll();
+    document.getElementById("office").classList.remove("hidden");
+}
+
+function showLiving() {
+    hideAll();
+    document.getElementById("living").classList.remove("hidden");
+}
+
+function showBedroom() {
+    hideAll();
+    document.getElementById("bedroom").classList.remove("hidden");
+}
 </script>
+
 </body>
 </html>

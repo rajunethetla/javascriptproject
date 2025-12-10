@@ -7,3 +7,7 @@ function showHome() {
     document.getElementById("shop").classList.add("hidden");
     document.getElementById("home").classList.remove("hidden");
 }
+
+
+
+
